@@ -1,0 +1,934 @@
+/* Nav */
+
+.bg-dark {
+    background-color: black;
+}
+.bg-red {
+    background-color: crimson;
+}
+
+
+    .bg-dark li a {
+    color: white;
+}
+    .bg-dark li a:hover{
+    color: crimson !important;
+}
+
+.btn {
+    color: white;
+    border-color: none;
+}
+
+.btn-outline-success {
+    color: crimson;
+    border-color: white;
+}
+    .btn-outline-success:hover {
+    color: white;
+}
+
+.bg-dark li a {
+    display: flex;
+    justify-content: space-between;
+
+}
+.carrito{
+    background-color: black;
+    border-radius: 4px;
+    border-color: black;
+    margin-right: 20px;
+    width: 40px;
+    height: 40px;
+}
+
+    .carrito:hover{
+        color: white;
+    }
+    .carrito svg{
+        color: white;
+    
+    }
+    .carrito svg:hover{
+        color: crimson;
+    }
+
+.dropPerfil {
+    background-color: black;
+    border-color: black;
+}
+
+.text-left{ 
+    text-align: left;
+}
+.text-right{
+    text-align: right;
+}
+.text-center{
+    text-align: center;
+    font-size: 30px;
+
+}
+
+/* End Nav */
+
+
+/* Footer */
+.containerPasos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+.titulosFooter {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-size: 24px;
+    font-weight: 600;
+
+}
+.titulosFooter:hover {
+   color:  rgb(219, 75, 56);
+}
+.listasPeso {
+    font-size: 14px;
+    font-weight: 400;
+   margin-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.containerFooter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(248, 219, 215, 1);
+}
+
+.imagenFooter {
+    margin-top: 25px;
+    margin-bottom: 10px;
+
+}
+.copyright {
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+/* End Footer */
+
+/* Head Gastronomía */
+
+.headGastronomia {
+    background-image: url(/img/gastroHead.png);
+    height: 400px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+/* Main Gastronomía */
+
+.textoHeadGastro{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+/* filtros */
+
+.filtrosG{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    background-color: rgb(248, 248, 248);
+    width: 60%;
+    margin-left: 25px;
+    margin-top: 50px; 
+    padding-left: 15px;
+    padding-bottom: 15px;
+    grid-area: filtros;
+}
+
+
+
+
+.tituloFiltros {
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 30px;
+    margin-bottom: 25px;
+}
+
+.tituloFiltros2 {
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+    
+
+
+/* CARDS */
+
+
+
+.cardG1{
+    width: 220px;
+    height: 350px;
+    border-radius: 8px;
+    background-color: rgb(248, 248, 248);
+    margin: 5px 5px;
+    padding: 5px 5px;
+    
+}
+
+    .cardG1 img{
+    width: 100%;
+}
+    .cardG1 figcaption{
+    font-size: 20px;
+    font-weight: 500;
+}
+    .cardG1 p{
+    font-size: 14px;
+    font-weight: 300;
+    
+}
+    .cardG1 button{
+    color: white;
+    background-color: crimson;
+    border: none;
+    border-radius: 8px;
+    width: 150px;
+    font-size: 12px;
+    font-weight: 500;
+}
+    .cardG1 button:hover{
+    background-color: white;
+    color: black;
+}
+
+
+.card1 {
+    display: flex;
+    flex-direction: row ;
+    flex-wrap: wrap;
+    grid-area: uno;
+}
+.card2 {
+    display: flex;
+    flex-direction: row ;
+    flex-wrap: wrap;
+    grid-area: dos;
+}
+.card3 {
+    display: flex;
+    flex-direction: row ;
+    flex-wrap: wrap;
+    grid-area: tres;
+}
+.card4 {
+    display: flex;
+    flex-direction: row ;
+    flex-wrap: wrap;
+    grid-area: cuatro;
+}
+.card5 {
+    display: flex;
+    flex-direction: row ;
+    flex-wrap: wrap;
+    grid-area: cinco;
+}
+.card6 {
+    display: flex;
+    flex-direction: row ;
+    flex-wrap: wrap;
+    grid-area: seis;
+}
+.card7 {
+    display: flex;
+    flex-direction: row ;
+    flex-wrap: wrap;
+    grid-area: siete;
+}
+.card8 {
+    display: flex;
+    flex-direction: row ;
+    flex-wrap: wrap;
+    grid-area: ocho;
+}
+
+.containerGastronomia {
+    display: grid;
+    grid-template-columns: 1fr repeat(4,1fr);
+    grid-template-rows: 50% 50%;
+    grid-template-areas: 
+    "filtros uno dos tres cuatro"
+    "filtros cinco seis siete ocho" ;
+}
+
+
+/* home */
+
+header {
+    background-image: url(/img/hero\ banner.jpg);
+    height: 400px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+
+
+input {
+    font-size: 35px;
+    text-align: center;
+    
+}
+
+.container{
+    margin: 25px;
+    display: flex;
+    justify-content: center;}
+    
+    .card {
+        margin-left: 30px;
+        height: 350px;
+        width: 235px;
+        box-shadow: -1px 8px 19px 0px rgba(0,0,0,0.29);
+        -webkit-box-shadow: -1px 8px 19px 0px rgba(0,0,0,0.29);
+        -moz-box-shadow: -1px 8px 19px 0px rgba(0,0,0,0.29);
+    }
+    .card1 {
+        margin-bottom: 25px;
+        padding: 10px;
+        background-color: white;
+        position: relative;
+    }
+    .card2 {
+        background-color: white;
+        width: 235px;
+        height: 50px;
+        margin-top: -15px;
+        
+    }
+    .calification {
+        margin-left: 4%;
+        font-size: 15px;
+        font-weight: 600;
+    }
+    
+    .cardImagen {
+        height: 220px;
+        width: 215px;
+    }
+    .pricesHome {
+        margin-left: 4%;
+        font-size: 20px;
+        font-weight: 700;
+        margin-top: 5%;
+        color: rgb(219, 75, 56);
+    }
+    
+    .clickeable {
+        filter: saturate(0);
+    }
+    .clickeable:visited {
+        filter: saturate(50);
+    
+    }
+    
+    
+    .tituloCard {
+        position: absolute;
+        left: 6%;
+        bottom: 8%;
+        color: white;
+        font-size: 25px;
+    }
+    
+    .container2{
+        background-color: bisque;
+        display: block;
+        justify-content: space-around;}
+    
+    .text-section1 {
+        margin-left: 50px;
+        font-size: 45px;
+    }    
+    
+    .flex-direction{
+        flex-direction: column;
+    }
+    .text-section2{
+        margin-left: 50px;
+        font-size: 25px;    
+    }
+    header img {
+        width: 100%;
+    }
+    
+    
+    .hcont {
+        position: relative;
+        margin-bottom: 150px;
+    
+    }
+    
+    .backgoundButton {
+        position: absolute;
+        top: 93%;
+        left: 40%;
+        background-color: rgba(248, 219, 215, 1);
+        height: 70px;
+        width: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 15px;
+    }
+    .busqueda {
+        height: 45px;
+        width: 350px;
+        border: none;
+        border-radius: 15px;
+    }
+    .busqueda::placeholder {
+        font-size: 20px;
+        align-items:  center;
+       
+       
+    }
+    
+    .container1 {
+        margin-top: 100px;
+        background: rgba(248, 219, 215, 1);
+        background-image: url(/img/fondoHomeGarabatos.png);
+        height: 400px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    
+    }
+    
+    .presents {
+        position: relative;
+    }
+    .button {
+    background-color:  rgb(219, 75, 56);
+    color: white;
+    width: 250px;
+    height: 32px;
+    border-radius: 15px;
+    font-size: 16px;
+    margin-top: 50px;
+    position: absolute;
+    right: 1%;
+    border: none;
+    }
+    
+    .invite, .presents {
+        height: 700px;
+        width: 700px;
+        margin-top: 25px;
+    }
+    
+    
+    .tituloSection {
+        font-size: 45px;
+        line-height: 47px;
+        color: black;
+        margin-bottom: 25px;
+    }
+    .colorText1 {
+        color: rgb(219, 75, 56);
+    }
+    
+    .parrafoSection {
+        font-size: 20px;
+        line-height: 22px;
+        margin-bottom: 10px;
+    
+    }
+    .tituloSection1 {
+        font-size: 35px;
+        line-height: 38px;
+        margin-bottom: 25px;
+    }
+    
+    .marginTopSection {
+        margin-top: 50px;
+    }
+    
+    .containerPasos {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    
+    }
+    
+    .pasos {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    
+    
+    }
+    
+    .box {
+        height: 100px;
+        width: 220px;
+        background-color: rgba(248, 219, 215, 1);
+        border-radius: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: -1px 8px 19px 0px rgba(0,0,0,0.15);
+    -webkit-box-shadow: -1px 8px 19px 0px rgba(0,0,0,0.15);
+    -moz-box-shadow: -1px 8px 19px 0px rgba(0,0,0,0.15);
+        margin: 35px;
+    
+    
+    }
+    
+    .number {
+        font-size: 55px;
+        font-weight: 600;
+        color: rgb(219, 75, 56);
+    
+    }
+    
+    .parrafoSection1{
+        font-size: 20px;
+    
+    }
+    .imagenSize {
+        width: auto;
+        height: 350px;
+        
+    }
+    
+    .tituloSection2 {
+        font-size: 45px;
+        margin-top: 35px;
+        margin-bottom: 15px;
+    }
+    
+    
+    .imagenContainer {
+        display: flex;
+        flex-direction: row;
+    }
+
+
+    /* Quienes somos */
+    .containerQS{
+        display: grid;
+        grid-template-columns: 50% repeat(2fr); 
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "uno tres",
+        "dos tres", 
+        "cuatro tres",
+    }
+    .containerQS .textoQS{
+        grid-area: uno;
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+        justify-content: start;
+        text-align: start;
+    }
+    
+    .textoQS {
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+        justify-content: start;
+        text-align: start;
+        margin-left: 15px;
+        margin-top: 25px;
+        font-weight: 800;
+    }
+    .containerQS .parrafoQS{
+        grid-area: dos;
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+        justify-content: start;
+        text-align: start;
+    }
+    .parrafoQS p{
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+        justify-content: start;
+        text-align: start;
+        font-size: 16px;
+        margin-top: 95px;
+        margin-right: 60%;
+        margin-left: 15px;
+        line-height: 30px;
+    }
+    
+    .containerQS .imagenQS{
+        grid-area: tres;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: flex-end;
+        justify-content: end;
+    
+    
+    }
+    .imagenQS img{
+        width: 50%;
+        height: 650px;
+        object-fit: cover;
+    }
+    .containerQS .texto2QS{
+        grid-area: cuatro;
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+        justify-content: start;
+        text-align: start;
+        
+    }
+    .texto2QS {
+        margin-top: 600px;
+        font-size: 24px;
+        font-weight: 700 ;
+    }
+
+    /* Surpriser */
+    .containerSurpriser {
+        display: flex;
+        flex-direction: column;
+        justify-content:space-between;
+        background-image: url(../img/surpriserHead.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        align-content: space-between;
+    }
+    .tituloSurpriser {
+        font-size: 45px;
+        color: white;
+        padding: 35px;
+    }
+    .parrafoSurpriser {
+        font-size: 20px;
+        line-height: 22px;
+        color: white;
+        padding: 35px;
+    }
+    .containerForm {
+        height: 350px;
+        width: 450px;
+        background-color: rgba(248, 219, 215, 1);
+        border-radius: 15px;
+        display: flex;
+        padding: 35px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        margin-left: 35px;
+    }
+    .placeholderSurpriser {
+        font-size: 10px;
+        border-radius: 15px;
+        width: 450px;
+        height: 42px;
+        margin-bottom: 15px;
+        border: none;
+    
+    }
+    .buttonSupriser {
+        background-color:  rgb(219, 75, 56);
+        color: white;
+        width: 250px;
+        height: 32px;
+        border-radius: 15px;
+        font-size: 16px;
+        margin-top: 50px;
+        border: none;
+    }
+
+    /* Regalos */
+
+.Regalos {
+    display: grid;
+    grid-template-columns: 50% 50%; 
+    grid-template-rows: 2fr 2fr;
+    grid-template-areas: 
+    "uno dos"
+    "tres tres"; 
+}
+
+.textoRegalos {
+    grid-area: uno;
+    display: flex;
+    flex-direction: row;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 40px;
+    margin-left: 45px;
+    margin-right: 45px;
+    margin-top: 35px;
+}
+
+.imagenRegalos {
+    grid-area: dos;
+
+}
+
+.imagenRegalos img {
+    width: 100%;
+}
+
+.parrafoSectionFormato{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 35px;
+
+
+}
+.containerRegalos1 {
+    background: rgba(248, 219, 215, 1);
+    background-image: url(/img/fondoHomeGarabatos.png);
+    height: 250px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+    grid-area: tres;
+}
+
+
+/* Surpriser */
+.containerSurpriser {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    background-image: url(../img/surpriserHead.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-content: space-between;
+}
+.tituloSurpriser {
+    font-size: 45px;
+    font-weight: 700;
+    color: white;
+    padding: 35px;
+}
+.parrafoSurpriser {
+    font-size: 20px;
+    line-height: 22px;
+    color: white;
+    padding: 35px;
+}
+.containerForm {
+    height: 350px;
+    width: 450px;
+    background-color: rgba(248, 219, 215, 1);
+    border-radius: 15px;
+    display: flex;
+    padding: 35px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 35px;
+}
+.placeholderSurpriser {
+    font-size: 10px;
+    border-radius: 15px;
+    width: 375px;
+    height: 42px;
+    margin-bottom: 15px;
+    border: none;
+    font-size: 14px;
+
+}
+.buttonSupriser {
+    background-color:  rgb(219, 75, 56);
+    color: white;
+    width: 250px;
+    height: 32px;
+    border-radius: 15px;
+    font-size: 16px;
+    margin-top: 50px;
+    margin-left: 60px;
+    border: none;
+}
+
+/* media queries */
+
+/* regalos */
+
+@media (width > 769px ){
+    .Regalos {
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(3, auto);
+        grid-template-areas: 
+        "dos"
+        "uno"
+        "tres"
+    }
+    .parrafoSectionFormato{
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 30px;
+}
+    .tituloSection{
+        font-size: 44px;
+        margin-left: 10px;
+    }
+    .containerRegalos1{
+        margin-bottom: 20px;
+    }
+}
+
+@media (width < 321px ){
+
+    .Regalos {
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(3, auto);
+        grid-template-areas: 
+        "dos"
+        "uno"
+        "tres";
+        width: 100%;
+    }
+    .parrafoSectionFormato{
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 18px;
+        padding-left: 15px;
+        padding-right: 15px;
+        width: 45%;
+    }
+    .textoRegalos {
+        display: flex;
+        flex-direction: row;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-top: 35px;
+    }
+    .tituloSection{
+        font-size: 28px;
+        font-weight: 500;
+        line-height: 32px;
+        padding-left: 10px;
+        padding-right: 10px;
+        width: 45%
+    }
+    .containerRegalos1{
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer{
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+    }
+        .text-center {
+            font-size: 24px;
+        }
+    .containerPasos {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+    }
+    .titulosFooter {
+        font-size: 12px;
+        font-weight: 600;
+        margin-left: 10px;
+        margin-right: 20px;
+    }
+    .listasPeso {
+        font-size: 9px;
+        margin-left: 10px;
+        margin-right: 20px;
+
+    }
+
+    .imagenFooter {
+        margin-top: 25px;
+        margin-bottom: 10px;
+        width: 100px;
+}
+}
+
+
+/* media queries */
+/* Quienes somos */
+
+@media (width < 768px ) {
+
+    .containerQS{
+        display: grid;
+        grid-template-columns: 100%; 
+        grid-template-rows: repeat (4,auto);
+        grid-template-areas: 
+        "tres"
+        "uno"
+        "dos"
+        "cuatro";
+    }
+    .textoQS{
+        display: flex;
+        margin-left: 15px;
+        margin-top: 25px;
+        font-weight: 800;
+    }
+    
+    .containerQS .parrafoQS{
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+        justify-content: start;
+        text-align: start;
+    }
+    .parrafoQS p{
+        display: flex;
+        flex-direction: column;
+        font-size: 12px;
+        margin-top: 95px;
+        margin-right: 60%;
+        margin-left: 15px;
+        line-height: 20px;
+    }
+    
+    .imagenQS{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+    
+    .containerQS .texto2QS{
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+        justify-content: start;
+        text-align: start;
+        
+    }
+    .texto2QS {
+        margin-top: 600px;
+        font-size: 16px;
+        font-weight: 700 ;
+    }
+}
