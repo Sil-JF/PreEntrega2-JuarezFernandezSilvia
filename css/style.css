@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
+
+*{ 
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    
+}
 /* Nav */
 
 .bg-dark {
@@ -287,17 +294,29 @@ header {
 }
 
 
-
 input {
     font-size: 35px;
-    text-align: center;
-    
+    text-align: center;    
+}
+
+.homeSection {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-content: center;
+    align-items: center;
+
 }
 
 .container{
+    width: 100%;
     margin: 25px;
     display: flex;
-    justify-content: center;}
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    
+}
     
     .card {
         margin-left: 30px;
@@ -315,7 +334,7 @@ input {
     }
     .card2 {
         background-color: white;
-        width: 235px;
+        width: 98%;
         height: 50px;
         margin-top: -15px;
         
@@ -496,7 +515,6 @@ input {
     -webkit-box-shadow: -1px 8px 19px 0px rgba(0,0,0,0.15);
     -moz-box-shadow: -1px 8px 19px 0px rgba(0,0,0,0.15);
         margin: 35px;
-    
     
     }
     
@@ -771,7 +789,7 @@ input {
 
 /* regalos */
 
-@media (width > 769px ){
+@media (width > 769px ){ 
     .Regalos {
         grid-template-columns: 100%;
         grid-template-rows: repeat(3, auto);
@@ -794,7 +812,7 @@ input {
     }
 }
 
-@media (width < 321px ){
+@media (width < 321px ){ 
 
     .Regalos {
         grid-template-columns: 100%;
@@ -875,7 +893,7 @@ input {
 /* media queries */
 /* Quienes somos */
 
-@media (width < 768px ) {
+ @media (width > 768px ){
 
     .containerQS{
         display: grid;
